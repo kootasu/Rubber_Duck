@@ -7,6 +7,7 @@ public class Queue implements Comparable<Queue> {
     private int id;
     public static int queueCounter = 0;
     private double queueStrength;
+    private boolean isDoomed;
     private LinkedList list;
 
     public Queue(){
@@ -65,6 +66,14 @@ public class Queue implements Comparable<Queue> {
 
     public void setQueueStrength(double queueStrength) {
         this.queueStrength = queueStrength;
+    }
+
+    public boolean isDoomed() {
+        return isDoomed;
+    }
+
+    public void setDoomed(boolean doomed) {
+        isDoomed = doomed;
     }
 
     @Override
